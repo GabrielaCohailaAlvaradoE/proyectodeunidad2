@@ -18,7 +18,8 @@
 <body data-theme="dark" class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg app-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.jsp">
+                <img src="images/LogoWhite.png" alt="Logo Resguarda" class="navbar-brand-logo theme-logo" data-theme-logo data-logo-dark="images/LogoWhite.png" data-logo-light="images/Logo.png">
                 <span class="brand-accent">Resguarda</span> Staff
             </a>
             <div class="d-flex align-items-center gap-2">
@@ -77,10 +78,10 @@
 
                                 <div class="mb-4">
                                     <label for="password" class="form-label">Contraseña</label>
-                                    <div class="input-group">
+                                    <div class="input-group password-input-group">
                                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
                                         <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Ingresa tu contraseña" required>
-                                        <button type="button" class="btn password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
+                                        <button type="button" class="password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
                                             <i class="bi bi-eye" data-password-icon></i>
                                         </button>
                                     </div>

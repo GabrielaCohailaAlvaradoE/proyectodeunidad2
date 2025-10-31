@@ -18,7 +18,8 @@
 <body data-theme="dark" class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg app-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.jsp">
+                <img src="images/Logo.png" alt="Logo Resguarda" class="navbar-brand-logo theme-logo" data-theme-logo data-logo-dark="images/Logo.png" data-logo-light="images/LogoWhite.png">
                 <span class="brand-accent">Resguarda</span> Registro
             </a>
             <div class="d-flex align-items-center gap-2">
@@ -54,7 +55,7 @@
                             <input type="hidden" name="accion" value="registrar">
                             <div class="mb-3">
                                 <label for="dni" class="form-label">DNI</label>
-                                <div class="input-group">
+                                <div class="input-group password-input-group">
                                     <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
                                     <input type="text" class="form-control" id="dni" name="txtDni" placeholder="Tu DNI de 8 dígitos" required pattern="[0-9]{8}" maxlength="8" title="El DNI debe tener 8 dígitos">
                                     <span class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true" id="dniSpinner" style="display:none;"></span>
@@ -91,8 +92,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text"><i class="bi bi-lock"></i></span>
                                     <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Crea una contraseña segura" required>
-                                    <button type="button" class="btn password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
-                                        <i class="bi bi-eye" data-password-icon></i>
+                                    <button type="button" class="password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">                                        <i class="bi bi-eye" data-password-icon></i>
                                     </button>
                                 </div>
                             </div>

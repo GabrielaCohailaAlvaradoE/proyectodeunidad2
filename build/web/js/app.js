@@ -2,12 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const storedTheme = localStorage.getItem('app-theme');
   let activeTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+  
+    const updateThemeAssets = () => {
+        document.querySelectorAll('[data-theme-logo]').forEach((logo) => {
+            const darkSrc = logo.getAttribute('data-logo-dark');
+            const lightSrc = logo.getAttribute('data-logo-light');
+            const desiredSrc = activeTheme === 'dark' ? darkSrc || lightSrc : lightSrc || darkSrc;
+
+            if (desiredSrc && logo.getAttribute('src') !== desiredSrc) {
+                logo.setAttribute('src', desiredSrc);
+            }
+        });
+    };
+
 
   const applyTheme = (theme) => {
     activeTheme = theme;
     document.body.setAttribute('data-theme', theme);
     document.documentElement.style.colorScheme = theme === 'dark' ? 'dark' : 'light';
     localStorage.setItem('app-theme', theme);
+    updateThemeAssets();
   };
 
   applyTheme(activeTheme);
@@ -111,20 +125,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-password-toggle]').forEach((toggle) => {
     const targetSelector = toggle.getAttribute('data-password-toggle');
             if (!targetSelector) {
-    return;
+            return;
     }
 
     const input = document.querySelector(targetSelector);
             if (!input) {
-    return;
+            return;
     }
 
     const icon = toggle.querySelector('[data-password-icon]');
-            toggle.setAttribute('aria-label', 'Mostrar contraseña');
-            toggle.setAttribute('aria-pressed', 'false');
-            toggle.addEventListener('click', () => {
-            togglePasswordVisibility(toggle, input, icon);
-            });
+        toggle.setAttribute('aria-label', 'Mostrar contraseña');
+        toggle.setAttribute('aria-pressed', 'false');
+        toggle.addEventListener('click', () => {
+        togglePasswordVisibility(toggle, input, icon);
     });
-            }
-    );
+    });
+});

@@ -19,8 +19,9 @@
 <body data-theme="dark" class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg app-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.jsp">
-                <span class="brand-accent">Resguarda</span> Parking
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.jsp">
+                <img src="images/LogoWhite.png" alt="Logo Resguarda" class="navbar-brand-logo theme-logo" data-theme-logo data-logo-dark="images/LogoWhite.png" data-logo-light="images/Logo.png">
+                <span class="brand-accent">Resguarda</span> Estacionamiento
             </a>
             <div class="d-flex align-items-center gap-2">
                 <a class="nav-link" href="index.jsp">
@@ -52,8 +53,7 @@
                     <div class="floating-bubbles">
                         <div class="app-card p-4 p-lg-5">
                             <div class="text-center mb-4">
-                                <img src="images/Logo.png" alt="Logo Estacionamientos Resguarda" class="img-fluid" style="max-width: 180px;">
-                                <h2 class="mt-3 fw-bold text-uppercase">Bienvenido</h2>
+                                <img src="images/LogoWhite.png" alt="Logo Estacionamientos Resguarda" class="img-fluid theme-logo" style="max-width: 180px;" data-theme-logo data-logo-dark="images/LogoWhite.png" data-logo-light="images/Logo.png">                                <h2 class="mt-3 fw-bold text-uppercase">Bienvenido</h2>
                                 <p class="text-muted mb-0">Ingresa tus credenciales para continuar</p>
                             </div>
 
@@ -73,7 +73,7 @@
                             <input type="hidden" name="accion" value="login">
                             <div class="mb-3">
                                 <label for="dni" class="form-label">DNI</label>
-                                <div class="input-group">
+                                <div class="input-group password-input-group">
                                     <span class="input-group-text"><i class="bi bi-person"></i></span>
                                     <input type="text" class="form-control" id="dni" name="txtDni" placeholder="Ingresa tu DNI" required pattern="[0-9]{8}" title="El DNI debe tener 8 dígitos">
                                 </div>
@@ -84,8 +84,7 @@
                                 <div class="input-group">
                                     <span class="input-group-text"><i class="bi bi-lock"></i></span>
                                     <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Ingresa tu contraseña" required>
-                                    <button type="button" class="btn password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
-                                        <i class="bi bi-eye" data-password-icon></i>
+                                    <button type="button" class="password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">                                        <i class="bi bi-eye" data-password-icon></i>
                                     </button>
                                 </div>
                             </div>

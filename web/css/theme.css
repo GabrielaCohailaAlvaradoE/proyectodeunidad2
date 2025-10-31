@@ -200,39 +200,56 @@ body[data-theme='light'] .input-group-text {
     color: var(--text-strong);
 }
 
-.password-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0.95rem;
-    border-color: var(--input-border);
-    background: transparent;
-    color: var(--text-primary);
-    border-left: none;
-    transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
-}
 
-.password-toggle .bi {
-    font-size: 1.1rem;
-}
+    .navbar-brand-logo {
+        height: 36px;
+        width: auto;
+        transition: opacity var(--transition-base), filter var(--transition-base);
+    }
 
-.input-group .password-toggle {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
+    .theme-logo {
+        transition: opacity var(--transition-base), filter var(--transition-base);
+    }
+
+    .password-input-group {
+        position: relative;
+    }
+
+    .password-input-group .form-control {
+        padding-right: 3rem;
+    }
+
+    .password-toggle {
+        position: absolute;
+        top: 50%;
+        right: 0.75rem;
+        transform: translateY(-50%);
+        border: none;
+        background: transparent;
+        color: var(--text-secondary);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        transition: color var(--transition-base), background-color var(--transition-base);
+        z-index: 2;
+    }
 
 .password-toggle:hover,
 .password-toggle:focus {
-    background-color: rgba(0, 78, 146, 0.12);
-    color: var(--color-azul);
-    border-color: rgba(0, 78, 146, 0.4);
+    color: var(--color-acento);
+    background-color: rgba(214, 255, 63, 0.08);
+    outline: none;
 }
 
-body[data-theme='dark'] .password-toggle:hover,
-body[data-theme='dark'] .password-toggle:focus {
-    background-color: rgba(214, 255, 63, 0.14);
-    color: var(--color-acento);
-    border-color: rgba(214, 255, 63, 0.35);
+body[data-theme='light'] .password-toggle {
+    color: var(--color-gris);
+}
+
+.password-toggle i {
+    font-size: 1.1rem;
 }
 
 body[data-theme='dark'] {
