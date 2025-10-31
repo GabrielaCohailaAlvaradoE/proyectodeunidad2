@@ -37,12 +37,12 @@
             <a class="navbar-brand" href="ControladorCliente?accion=verPanel">
                 <i class="bi bi-shield-lock-fill me-2"></i><span class="brand-accent">Resguarda</span> Cliente
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCliente" aria-controls="navbarCliente" aria-expanded="false" aria-label="Alternar navegación">
-                <i class="bi bi-list fs-3"></i>
+            <button class="navbar-toggler text-strong border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCliente" aria-controls="navbarCliente" aria-expanded="false" aria-label="Alternar navegación">
+            <i class="bi bi-list fs-3"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarCliente">
                 <ul class="navbar-nav align-items-lg-center me-lg-3">
-                    <li class="nav-item"><span class="nav-link">Hola, <strong class="text-white"><%= clienteLogueado.getNombres() %></strong></span></li>
+                    <li class="nav-item"><span class="nav-link">Hola, <strong class="text-strong"><%= clienteLogueado.getNombres()%></strong></span></li>
                     <li class="nav-item"><a class="nav-link" href="ControladorCliente?accion=verPanel">Panel</a></li>
                     <li class="nav-item"><a class="nav-link active" href="ControladorCliente?accion=verMisVehiculos">Mis Vehículos</a></li>
                     <li class="nav-item"><a class="nav-link" href="ControladorCliente?accion=verHistorial">Historial</a></li>
@@ -106,7 +106,7 @@
                             <tbody>
                                 <% for (Vehiculo vehiculo : listaVehiculos) { %>
                                     <tr>
-                                        <td class="fw-semibold text-white"><%= vehiculo.getPlaca() %></td>
+                                        <td class="fw-semibold text-strong"><%= vehiculo.getPlaca()%></td>
                                         <td><%= vehiculo.getMarca() != null ? vehiculo.getMarca() : "" %></td>
                                         <td><%= vehiculo.getModelo() != null ? vehiculo.getModelo() : "" %></td>
                                         <td><%= vehiculo.getColor() != null ? vehiculo.getColor() : "" %></td>

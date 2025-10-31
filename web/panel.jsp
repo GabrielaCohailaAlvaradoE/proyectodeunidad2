@@ -26,12 +26,12 @@
             <a class="navbar-brand" href="ControladorCliente?accion=verPanel">
                 <i class="bi bi-shield-lock-fill me-2"></i><span class="brand-accent">Resguarda</span> Cliente
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCliente" aria-controls="navbarCliente" aria-expanded="false" aria-label="Alternar navegación">
-                <i class="bi bi-list fs-3"></i>
+            <button class="navbar-toggler text-strong border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCliente" aria-controls="navbarCliente" aria-expanded="false" aria-label="Alternar navegación">
+            <i class="bi bi-list fs-3"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarCliente">
                 <ul class="navbar-nav align-items-lg-center me-lg-3">
-                    <li class="nav-item"><span class="nav-link">Hola, <strong class="text-white"> <%= clienteLogueado.getNombres() %></strong></span></li>
+                    <li class="nav-item"><span class="nav-link">Hola, <strong class="text-strong"> <%= clienteLogueado.getNombres()%></strong></span></li>
                     <li class="nav-item"><a class="nav-link active" href="ControladorCliente?accion=verPanel">Panel</a></li>
                     <li class="nav-item"><a class="nav-link" href="ControladorCliente?accion=verMisVehiculos">Mis Vehículos</a></li>
                     <li class="nav-item"><a class="nav-link" href="ControladorCliente?accion=verHistorial">Historial</a></li>
@@ -70,7 +70,7 @@
                             <span class="text-uppercase small text-muted">Gestión</span>
                             <i class="bi bi-car-front-fill fs-3 text-accent"></i>
                         </div>
-                        <h4 class="fw-bold text-white">Mis Vehículos</h4>
+                        <h4 class="fw-bold text-strong">Mis Vehículos</h4>
                         <p class="text-muted">Consulta y administra los vehículos asociados a tu cuenta.</p>
                         <a href="ControladorCliente?accion=verMisVehiculos" class="btn btn-primary mt-3">
                             Gestionar vehículos
@@ -84,7 +84,7 @@
                             <span class="text-uppercase small text-muted">Pagos</span>
                             <i class="bi bi-receipt fs-3 text-accent"></i>
                         </div>
-                        <h4 class="fw-bold text-white">Historial de pagos</h4>
+                        <h4 class="fw-bold text-strong">Historial de pagos</h4>
                         <p class="text-muted">Revisa tus pagos y detalles de estacionamientos anteriores.</p>
                         <a href="ControladorCliente?accion=verHistorial" class="btn btn-outline-primary mt-3">
                             Ver historial
@@ -98,7 +98,7 @@
                             <span class="text-uppercase small text-muted">Cuenta</span>
                             <i class="bi bi-person-circle fs-3 text-accent"></i>
                         </div>
-                        <h4 class="fw-bold text-white">Mi perfil</h4>
+                        <h4 class="fw-bold text-strong">Mi perfil</h4>
                         <p class="text-muted mb-4">Mantén tus datos actualizados y controla tus preferencias.</p>
                         <ul class="list-unstyled text-muted mb-4">
                             <li class="d-flex align-items-center gap-2"><i class="bi bi-envelope-open"></i><span><%= clienteLogueado.getEmail() %></span></li>

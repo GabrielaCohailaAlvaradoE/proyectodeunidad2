@@ -36,13 +36,13 @@
             <a class="navbar-brand" href="#">
                 <i class="bi bi-columns-gap me-2"></i><span class="brand-accent">Resguarda</span> Recepción
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRecepcion" aria-controls="navbarRecepcion" aria-expanded="false" aria-label="Alternar navegación">
+            <button class="navbar-toggler text-strong border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRecepcion" aria-controls="navbarRecepcion" aria-expanded="false" aria-label="Alternar navegación">
                 <i class="bi bi-list fs-3"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarRecepcion">
                 <ul class="navbar-nav align-items-lg-center me-lg-3">
-                    <li class="nav-item"><span class="nav-link"><i class="bi bi-headset me-1"></i>Hola, <strong class="text-white"><%= empleadoLogueado.getNombres() %></strong></span></li>
-                    <li class="nav-item"><span class="nav-link">Sede <strong class="text-white"><%= empleadoLogueado.getIdSede() %></strong></span></li>
+                    <li class="nav-item"><span class="nav-link"><i class="bi bi-headset me-1"></i>Hola, <strong class="text-strong"><%= empleadoLogueado.getNombres() %></strong></span></li>
+                    <li class="nav-item"><span class="nav-link">Sede <strong class="text-strong"><%= empleadoLogueado.getIdSede() %></strong></span></li>
                 </ul>
                 <div class="d-flex align-items-center gap-2">
                     <button class="btn btn-sm btn-outline-accent btn-theme-toggle" type="button" data-action="toggle-theme" aria-label="Cambiar tema">

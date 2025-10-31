@@ -56,39 +56,42 @@
                                     <i class="bi bi-shield-lock-fill"></i>
                                 </div>
                                 <h2 class="mt-3 fw-bold text-uppercase">Acceso del Personal</h2>
-                            <p class="text-muted">Ingresa tus credenciales para administrar la plataforma</p>
-                        </div>
+                                <p class="text-muted">Ingresa tus credenciales para administrar la plataforma</p>
+                            </div>
 
-                        <% if (error != null && !error.isEmpty()) { %>
+                            <% if (error != null && !error.isEmpty()) {%>
                             <div class="alert alert-danger" role="alert">
-                                <i class="bi bi-exclamation-triangle-fill me-2"></i> <%= error %>
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i> <%= error%>
                             </div>
-                        <% } %>
+                            <% }%>
 
-                        <form method="POST" action="ControladorEmpleado" class="mt-4">
-                            <input type="hidden" name="accion" value="login">
-                            <div class="mb-3">
-                                <label for="usuario" class="form-label">Usuario</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="bi bi-person-gear"></i></span>
-                                    <input type="text" class="form-control" id="usuario" name="txtUsuario" placeholder="Ingresa tu usuario" required>
+                            <form method="POST" action="ControladorEmpleado" class="mt-4">
+                                <input type="hidden" name="accion" value="login">
+                                <div class="mb-3">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person-gear"></i></span>
+                                        <input type="text" class="form-control" id="usuario" name="txtUsuario" placeholder="Ingresa tu usuario" required>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="mb-4">
-                                <label for="password" class="form-label">Contraseña</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                    <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Ingresa tu contraseña" required>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Ingresa tu contraseña" required>
+                                        <button type="button" class="btn password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
+                                            <i class="bi bi-eye" data-password-icon></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="bi bi-door-open-fill me-2"></i>Ingresar
-                                </button>
-                            </div>
-                        </form>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-door-open-fill me-2"></i>Ingresar
+                                    </button>
+                                </div>
+                            </form>
 
                             <div class="text-center mt-4">
                                 <p class="text-muted">¿Eres cliente? <a href="login.jsp" class="btn-accent-text">Ingresa aquí</a></p>
@@ -101,7 +104,7 @@
     </main>
 
     <footer class="py-4 text-center text-muted small">
-        &copy; <%= java.time.Year.now() %> Estación Resguarda. Gestión inteligente de estacionamientos.
+        &copy; <%= java.time.Year.now()%> Estación Resguarda. Gestión inteligente de estacionamientos.
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

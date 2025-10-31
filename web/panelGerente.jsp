@@ -44,14 +44,14 @@
             <a class="navbar-brand" href="ControladorEmpleado?accion=verPanelGerente">
                 <i class="bi bi-buildings me-2"></i><span class="brand-accent">Resguarda</span> Gerencia
             </a>
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGerente" aria-controls="navbarGerente" aria-expanded="false" aria-label="Alternar navegación">
+            <button class="navbar-toggler text-strong border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGerente" aria-controls="navbarGerente" aria-expanded="false" aria-label="Alternar navegación">
                 <i class="bi bi-list fs-3"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarGerente">
                 <ul class="navbar-nav align-items-lg-center me-lg-3">
                     <li class="nav-item"><a class="nav-link" href="ControladorEmpleado?accion=verPanelGerente">Equipo</a></li>
                     <li class="nav-item"><a class="nav-link active" href="ControladorSedeGestion?accion=listar">Pisos y espacios</a></li>
-                    <li class="nav-item"><span class="nav-link">Sede <strong class="text-white"><%= empleadoLogueado.getIdSede() %></strong></span></li>
+                    <li class="nav-item"><span class="nav-link">Sede <strong class="text-strong"><%= empleadoLogueado.getIdSede() %></strong></span></li>
                 </ul>
                 <div class="d-flex align-items-center gap-2">
                     <button class="btn btn-sm btn-outline-accent btn-theme-toggle" type="button" data-action="toggle-theme" aria-label="Cambiar tema">

@@ -97,4 +97,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.forEach((tooltipTriggerEl) => new window.bootstrap.Tooltip(tooltipTriggerEl));
   }
-});
+  
+    const togglePasswordVisibility = (toggle, input, icon) => {
+        const isVisible = input.type === 'text';
+        input.type = isVisible ? 'password' : 'text';
+        toggle.setAttribute('aria-pressed', (!isVisible).toString());
+        toggle.setAttribute('aria-label', isVisible ? 'Mostrar contraseña' : 'Ocultar contraseña');
+        if (icon) {
+            icon.className = isVisible ? 'bi bi-eye' : 'bi bi-eye-slash';
+        }
+    };
+
+    document.querySelectorAll('[data-password-toggle]').forEach((toggle) => {
+    const targetSelector = toggle.getAttribute('data-password-toggle');
+            if (!targetSelector) {
+    return;
+    }
+
+    const input = document.querySelector(targetSelector);
+            if (!input) {
+    return;
+    }
+
+    const icon = toggle.querySelector('[data-password-icon]');
+            toggle.setAttribute('aria-label', 'Mostrar contraseña');
+            toggle.setAttribute('aria-pressed', 'false');
+            toggle.addEventListener('click', () => {
+            togglePasswordVisibility(toggle, input, icon);
+            });
+    });
+            }
+    );

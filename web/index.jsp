@@ -17,8 +17,7 @@
             <a class="navbar-brand" href="#">
                 <span class="brand-accent">Resguarda</span> Station
             </a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
+            <button class="navbar-toggler text-strong" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">                <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
                 <ul class="navbar-nav align-items-lg-center me-lg-3">
@@ -70,7 +69,7 @@
                         <h3 class="fw-bold mb-3">Ingresar como Administrador</h3>
                         <p class="mb-4">Controla sedes, supervisa personal, administra pisos y monitorea la operación de tu estacionamiento.</p>
                         <div class="d-flex gap-3 flex-wrap">
-                            <a href="admin.jsp" class="btn btn-outline-accent btn-lg text-dark" style="color: inherit;">
+                            <a href="admin.jsp" class="btn btn-outline-accent btn-lg">
                                 <i class="bi bi-door-open-fill me-2"></i>Acceso a personal autorizado
                             </a>
                             <div class="d-flex align-items-center text-muted small gap-2">
@@ -97,9 +96,9 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="gradient-overlay h-100">
-                                <h5 class="text-uppercase text-white-50">¿Nuevo por aquí?</h5>
-                                <h3 class="fw-bold text-white mt-2">Regístrate y obtén acceso completo</h3>
-                                <p class="text-white-50">Crea tu cuenta en minutos y asocia tus vehículos para simplificar tu experiencia de estacionamiento.</p>
+                                <h5 class="text-uppercase text-white-soft">¿Nuevo por aquí?</h5>
+                                <h3 class="fw-bold text-strong mt-2">Regístrate y obtén acceso completo</h3>
+                                <p class="text-soft">Crea tu cuenta en minutos y asocia tus vehículos para simplificar tu experiencia de estacionamiento.</p>
                                 <a href="registro.jsp" class="btn btn-primary btn-lg mt-3">
                                     <i class="bi bi-pencil-square me-2"></i>Crear cuenta
                                 </a>

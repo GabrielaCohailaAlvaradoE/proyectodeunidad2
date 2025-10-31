@@ -84,6 +84,9 @@
                                 <div class="input-group">
                                     <span class="input-group-text"><i class="bi bi-lock"></i></span>
                                     <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Ingresa tu contraseña" required>
+                                    <button type="button" class="btn password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
+                                        <i class="bi bi-eye" data-password-icon></i>
+                                    </button>
                                 </div>
                             </div>
 
