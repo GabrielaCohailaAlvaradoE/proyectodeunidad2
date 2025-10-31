@@ -73,7 +73,10 @@
             <div class="card-body">
                 
                 <div class="text-center mb-4">
-                    <img src="https://placehold.co/150x70?text=Logo" alt="Logo Estación Resguarda" style="opacity: 0.8;">
+                    <img src="images/Logo.png"
+                         alt="Logo Estacionamientos Resguarda"
+                         width="200"
+                         height="auto">
                     <h3 class="mt-3 text-secondary">Bienvenido</h3>
                 </div>
 
