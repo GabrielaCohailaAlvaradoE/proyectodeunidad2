@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/index.html</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/config/Conexion.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/util/ApiClientDni.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/Cliente.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/interfaces/CRUDCliente.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/ClienteDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/controlador/ControladorCliente.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/login.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/registro.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/panel.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/Empleado.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/EmpleadoDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/controlador/ControladorEmpleado.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/admin.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/interfaces/CRUDEmpleado.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/Sede.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/interfaces/CRUDSede.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/SedeDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/controlador/ControladorSede.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/panelAdmin.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/panelAdminGerentes.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/panelGerente.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/Piso.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/Espacio.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/PisoDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/EspacioDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/controlador/ControladorSedeGestion.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/panelGerentePisos.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/Vehiculo.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/VehiculoDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modeloDAO/EstacionamientoDAO.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/RegistroEntrada.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/controlador/ControladorEstacionamiento.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/panelRecepcion.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/RegistroEstacionamiento.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/interfaces/CRUDVehiculo.java</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/web/misVehiculos.jsp</file>
+            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/PROYECTO_RESGUARDA/src/java/modelo/HistorialEntry.java</file>
+        </group>
+    </open-files>
+</project-private>
