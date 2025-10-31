@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String error = (String) request.getAttribute("error");
@@ -78,7 +79,7 @@
 
                                 <div class="mb-4">
                                     <label for="password" class="form-label">Contraseña</label>
-                                    <div class="input-group password-input-group">
+                                    <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
                                         <input type="password" class="form-control" id="password" name="txtPassword" placeholder="Ingresa tu contraseña" required>
                                         <button type="button" class="password-toggle" data-password-toggle="#password" aria-label="Mostrar contraseña" aria-pressed="false">
